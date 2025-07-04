@@ -85,8 +85,8 @@ npm install
 Create a file named `.env` in the root of the project and add the following:
 
 ```env
-WEBHOOK_URL=your_discord_webhook_url
-PANEL_PASSWORD=your_secure_password
+WEBHOOKURL=your_discord_webhook_url
+PASSWORD=your_secure_password
 ```
 
 * `WEBHOOK_URL`: The Discord webhook where the message will be sent
