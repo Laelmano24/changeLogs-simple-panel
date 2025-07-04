@@ -6,7 +6,7 @@ You can also **deploy it for free on Vercel**!
 
 ---
 
-## 🗄️ Preview
+## 🖼️ Preview
 
 ![Changelog Panel Preview](https://i.postimg.cc/Cx8hYk6y/Captura-de-Tela-66.png)
 
@@ -80,18 +80,26 @@ npm install
 
 ---
 
-### 4. Run the Server
+### 4. Configure Environment Variables
 
-Start the application with:
+Create a file named `.env` in the root of the project and add the following:
 
-```bash
-node index.js
+```env
+WEBHOOK_URL=your_discord_webhook_url
+PANEL_PASSWORD=your_secure_password
 ```
 
-Or, if you're using a framework like Express with nodemon:
+* `WEBHOOK_URL`: The Discord webhook where the message will be sent
+* `PANEL_PASSWORD`: Password required to access the panel
+
+---
+
+### 5. Run the Server
+
+Start the application locally with:
 
 ```bash
-npx nodemon index.js
+npm run start
 ```
 
 The panel should now be running at:
@@ -107,7 +115,7 @@ http://localhost:3000
 ## 🔗 How to Use
 
 1. Open your browser and go to `http://localhost:3000`
-2. Log in with your username and password
+2. Log in with your password
 3. Paste your **Discord webhook URL**
 4. Write your changelog message
 5. Click **Send**
@@ -121,15 +129,24 @@ The message will be delivered to your Discord server instantly.
 You can deploy this panel for free using [Vercel](https://vercel.com):
 
 1. Push this project to a GitHub repository
+
 2. Go to [https://vercel.com](https://vercel.com) and sign in
+
 3. Import your repository
+
 4. Set the build settings (if needed):
 
    * Framework: **Node.js**
    * Output Directory: `public` or your custom folder
-5. Deploy!
 
-> You might need to set environment variables for your login system.
+5. On Vercel, go to **Project Settings > Environment Variables** and add:
+
+   * `WEBHOOK_URL`
+   * `PANEL_PASSWORD`
+
+6. Deploy!
+
+> These variables are required for login and message sending to work properly.
 
 ---
 
