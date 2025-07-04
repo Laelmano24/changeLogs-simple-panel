@@ -115,7 +115,7 @@ http://localhost:3000
 ## 🔗 How to Use
 
 1. Open your browser and go to `http://localhost:3000`
-2. Log in with your password
+2. Log in with your password `http://localhost:3000/login`
 3. Paste your **Discord webhook URL**
 4. Write your changelog message
 5. Click **Send**
