@@ -62,7 +62,7 @@ v16.x.x
 Using Git (recommended):
 
 ```bash
-git clone https://github.com/your-username/changelog-panel.git
+git clone https://github.com/Laelmano24/changeLogs-simple-panel
 cd changelog-panel
 ```
 
