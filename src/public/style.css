@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
+    display: grid;
+    place-items: center;
+    background: url("wallpaper.jpg") no-repeat center center / cover;
+    height: 100dvh;
+}
+
+body::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.container-main {
+
+    display: grid;
+    place-items: center;
+    backdrop-filter: blur(10px);
+    border: 2px solid #6abbf6;
+    padding: 20px;
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.451);
+
+}
+
+.container-form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.container-form label {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.container-form input {
+    background: linear-gradient(#54acea, #4091cc);
+    color: #fff;
+    font-weight: 800;
+    padding: 5px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.container-form input::placeholder {
+    color: #fff;
+}
+
+
+.container-form textarea {
+    background: linear-gradient(#54acea, #4091cc);
+    color: #fff;
+    font-weight: 800;
+    padding: 5px;
+    border: none;
+    height: 70%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.container-form button {
+    background: #459fe0;
+    color: #fff;
+    border: none;
+    font-weight: 800;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+
+.container-form button:hover {
+    background: #3387c3;
+}
+
+.container-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 0px;
+    width: 100%;
+}
+
+.container-checkbox label {
+    font-size: 12px;
+}
+
+.container-checkbox input {
+    margin-top: 3px;
+    appearance: none;
+    border-radius: 5px;
+    background: #245f88;
+    border: none;
+    height: 10px;
+    width: 10px;
+}
+
+.container-checkbox input:checked {
+    background: #3686bf;
+}
+
+@media screen and (max-width: 300px) {
+    .container-main {
+        width: 80%;
+    }
+
+    .container-form label {
+        font-size: 17px;
+    }
+}

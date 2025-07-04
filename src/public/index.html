@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change logs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container-main">
+
+        <form action="/" method="post" class="container-form">
+
+            <label for="id-content">Write your message</label>
+            <input type="text" name="title" required placeholder="Enter the title">
+            <textarea name="content" id="id-content" required ></textarea>
+            <div class="container-checkbox" >
+                <label for="pingAll">@everyone</label>
+                <input type="checkbox" name="pingAll" id="pingAll">
+            </div>
+            <button type="submit" >Send to webhook</button>
+
+        </form>
+
+    </main>
+</body>
+</html>
