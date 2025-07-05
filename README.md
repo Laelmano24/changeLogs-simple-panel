@@ -82,7 +82,7 @@ npm install
 
 ### 4. Configure Environment Variables
 
-Create a file named `.env` in the root of the project and add the following:
+Go to the .env file and put your settings:
 
 ```env
 WEBHOOKURL=your_discord_webhook_url
