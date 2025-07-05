@@ -16,7 +16,7 @@ You can also **deploy it for free on Vercel**!
 
 * Send messages to a Discord webhook
 * Simple and clean interface
-* Basic login system (username & password)
+* Basic login system (password)
 * Lightweight and easy to deploy
 * Free hosting support (Vercel)
 
