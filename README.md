@@ -133,19 +133,7 @@ You can deploy this panel for free using [Vercel](https://vercel.com):
 
 3. Import your repository
 
-4. Set the build settings (if needed):
-
-   * Framework: **Node.js**
-   * Output Directory: `public` or your custom folder
-
-5. On Vercel, go to **Project Settings > Environment Variables** and add:
-
-   * `WEBHOOK_URL`
-   * `PANEL_PASSWORD`
-
-6. Deploy!
-
-> These variables are required for login and message sending to work properly.
+4. Deploy and access the url that Vercel will provide
 
 ---
 
