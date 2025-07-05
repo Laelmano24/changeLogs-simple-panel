@@ -89,8 +89,8 @@ WEBHOOKURL=your_discord_webhook_url
 PASSWORD=your_secure_password
 ```
 
-* `WEBHOOK_URL`: The Discord webhook where the message will be sent
-* `PANEL_PASSWORD`: Password required to access the panel
+* `WEBHOOKURL`: The Discord webhook where the message will be sent
+* `PASSWORD`: Password required to access the panel
 
 ---
 
